@@ -1,0 +1,3 @@
+[submodule "Arcade-plus"]
+	path = Arcade-plus
+	url = git@github.com:yojohanshinwataikei/Arcade-plus.git
