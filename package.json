@@ -20,6 +20,7 @@
     "tsconfig.json"
   ],
   "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "build": "rimraf dist && run-p --print-label build:*",
     "build:package": "rollup -c rollup.config.dev.js",
     "build:bundled": "rollup -c rollup.config.prod.js",
@@ -45,6 +46,7 @@
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.4",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.10",
     "antlr4ts-cli": "^0.5.0-alpha.4",
     "esbuild": "^0.25.5",
