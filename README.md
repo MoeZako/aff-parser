@@ -10,3 +10,10 @@ JavaScript parser for Arcaea File Format (aff).
 ## License
 
 MIT
+
+## Change Log
+
+### 0.1.0
+
+- Initial release.
+- Basic generated parser features.
