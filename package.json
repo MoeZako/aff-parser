@@ -1,0 +1,59 @@
+{
+  "name": "aff-parser",
+  "version": "0.1.0",
+  "description": "JavaScript parser for Arcaea File Format (aff).",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "browser": "./dist/index.browser.min.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "rimraf dist && run-p --print-label build:*",
+    "build:package": "rollup -c rollup.config.dev.js",
+    "build:bundled": "rollup -c rollup.config.prod.js",
+    "gene:language": "node ./scripts/gene-parser.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MoeZako/aff-parser.git"
+  },
+  "keywords": [
+    "aff",
+    "Arcaea",
+    "ArcaeaFileFormat",
+    "parser"
+  ],
+  "author": "MoeZako",
+  "license": "MIT",
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/node": "^24.0.10",
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "esbuild": "^0.25.5",
+    "jest": "^30.0.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-polyfill-node": "^0.13.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}

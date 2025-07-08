@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "stripInternal": true,
+    "noStrictGenericChecks": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "skipLibCheck": true
+  },
+  "buildOptions": {
+    "force": true
+  },
+  "include": ["src"],
+}
